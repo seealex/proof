@@ -1,4 +1,11 @@
 
+Requer:
+	[apache-maven-3.5.3](http://ftp.unicamp.br/pub/apache/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.zip)
+	Rodar comando:
+	```
+	mvn clean install
+	```
+
 # 1 Serviço Campanha:
   ### POST
 	 - http://localhost:8080/campaigns
@@ -128,6 +135,8 @@
   
 ### 3 Stream vogal
 	Pode ser executado apartir do projeto: **prooffirstvowel**
+	Rodar comando:
+	java -jar prooffirstvowel-0.0.1-SNAPSHOT.jar aAbBABacafe
 
 ### 4 Oque é DeadLock? 
 	Bloqueio no banco de dados devido ele estar em meio a uma transação que ainda não foi finalizada; 

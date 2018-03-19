@@ -92,7 +92,7 @@ public class UserService {
 			}
 			
 			//its new
-			userView.setCampaignList(campList.parallelStream().filter(s -> s.getIdHeartTeam().equals(heartTeam.getId())).collect(Collectors.toList()));
+			userView.setCampaignList(campList.parallelStream().filter(s -> s.getIdHeartTeam().equals(userView.getHeartTeam().getId())).collect(Collectors.toList()));
 			userRepository.save(userView);
 			
 			UriComponents uriComponents = 

@@ -5,7 +5,11 @@ Requer:
 	```
 	mvn clean install
 	```
-
+# Documentação:
+Serviço Campanha:
+Http://localhost:8080/swagger/index.html
+Serviço usuário sócio torcedor:
+Http://localhost:8081/swagger/index.html
 # 1 Serviço Campanha:
   ### POST
 	 - http://localhost:8080/campaigns

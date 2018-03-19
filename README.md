@@ -1,4 +1,11 @@
 
+Requer:
+	[apache-maven-3.5.3](http://ftp.unicamp.br/pub/apache/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.zip)
+	Rodar comando:
+	```
+	mvn clean install
+	```
+
 # 1 Serviço Campanha:
   ### POST
 	 - http://localhost:8080/campaigns

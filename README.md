@@ -136,9 +136,7 @@ Requer:
 ### 3 Stream vogal
 	Pode ser executado apartir do projeto: **prooffirstvowel**
 	Rodar comando:
-	```
 	java -jar prooffirstvowel-0.0.1-SNAPSHOT.jar aAbBABacafe
-	```
 
 ### 4 Oque é DeadLock? 
 	Bloqueio no banco de dados devido ele estar em meio a uma transação que ainda não foi finalizada; 

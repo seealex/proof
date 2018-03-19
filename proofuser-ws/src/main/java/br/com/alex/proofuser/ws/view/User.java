@@ -3,6 +3,9 @@ package br.com.alex.proofuser.ws.view;
 import java.util.Date;
 import java.util.List;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 
@@ -17,10 +20,15 @@ public class User {
 	private String id;
 	
 	@ApiModelProperty(position=0)
+	@NotBlank
+	@NotEmpty
 	private String fullName;
 	//Nome Completo;
 	
 	@ApiModelProperty(position=1)
+	@NotBlank
+	@NotEmpty
+	@Email
 	private String email;
 	//E-mail;
 	

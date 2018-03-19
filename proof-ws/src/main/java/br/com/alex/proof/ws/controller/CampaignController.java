@@ -53,9 +53,10 @@ public class CampaignController extends ErrorException<Campaign>{
             
             List<ErrorBean> errorsBean = new ArrayList<>();
             
-            br.getAllErrors().parallelStream().forEach(s -> {
+            br.getFieldErrors().parallelStream().forEach(s -> {
                 ErrorBean erro = new ErrorBean();
                 erro.setCode(s.getCode());
+                erro.setField(s.getField());
                 erro.setMessage(s.getDefaultMessage());;
                 errorsBean.add(erro);
             	});

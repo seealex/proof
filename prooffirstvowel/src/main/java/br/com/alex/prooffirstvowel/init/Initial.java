@@ -6,7 +6,14 @@ public class Initial {
 	
 	public static void main(String[]args) {
 		//Test on console if you need
-		System.out.println(initialCall(args[0]));
+		char test = initialCall(args[0]);
+		if(test == CHAR_NULL) {
+			System.out.println("Character vowel not found.");
+		}
+		else {
+			System.out.println(test);
+		}
+		
 	}
 	
 	public static char initialCall(String proofChars) {
@@ -30,7 +37,8 @@ public class Initial {
 			previous1 = previous; 
 			previous = next;
 		}
-
+		
+		
 		return vowelNotRepeated;
 	}
 
